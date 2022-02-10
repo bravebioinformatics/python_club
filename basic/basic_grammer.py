@@ -40,6 +40,10 @@ sex = ['man','woman','woman','woman','man','woman','man','man','man','woman','ma
 #In the list sex, it would be a little messy to have to handle strings all the time. Can you think of any ways to make handling of the list easier?
 #hint: the list only has two values(!)
 
+z = 2000
+
+
+
 #Now let's pair up those two lists and make a dictionary. Set "age" as the key. 
 
 #Is the person who is 24 years old man or woman? Please leave the code, not just the answer. 
