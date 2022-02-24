@@ -44,8 +44,16 @@ sex = ['man','woman','woman','woman','man','woman','man','man','man','woman','ma
 set_sex = set(sex)
 print(set_sex)
 
+#20220224 comment by Hara
+#interesting, why did you use set() here?
+
+
 #Now let's pair up those two lists and make a dictionary. Set "age" as the key. 
 age_set = {25:'man', 30:'woman', 18:'woman', 52:'woman', 68:'man', 41:'woman', 55:'man', 24:'man', 19:'man', 36:'woman', 40:'man', 62:'woman'}
+
+#there are 2 lists.
+#iterate those lists using "for"
+
 
 #Is the person who is 24 years old man or woman? Please leave the code, not just the answer. 
 print(age_set[24])
