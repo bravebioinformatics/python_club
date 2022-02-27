@@ -41,29 +41,41 @@ sex = ['man','woman','woman','woman','man','woman','man','man','man','woman','ma
 
 #In the list sex, it would be a little messy to have to handle strings all the time. Can you think of any ways to make handling of the list easier?
 #hint: the list only has two values(!)
-set_sex = set(sex)
-print(set_sex)
+#set_sex = set(sex)
+#print(set_sex)
 
 #20220224 comment by Hara
 #interesting, why did you use set() here?
+#Because I want to simplify the information of sex list.
 
 
 #Now let's pair up those two lists and make a dictionary. Set "age" as the key. 
-age_set = {25:'man', 30:'woman', 18:'woman', 52:'woman', 68:'man', 41:'woman', 55:'man', 24:'man', 19:'man', 36:'woman', 40:'man', 62:'woman'}
-
 #there are 2 lists.
 #iterate those lists using "for"
+list_dict = dict(zip(age,sex))
+for age, sex in list_dict.items():
+    print(age, sex)
+
+print(list_dict)
+
+#🔵
+#d = dict(zip(age,sex))
+#print(d)でも成功
+
+
+
+
 
 
 #Is the person who is 24 years old man or woman? Please leave the code, not just the answer. 
-print(age_set[24])
+print(list_dict[24])
 
 
 #Can you add one more patient information to the dictionary? 
 # 18 years old, man
-print("I can`t add it because it`s impossible one key pairs up muptiple keys due to python spec.")
+#I can`t add it because it`s impossible one key pairs up muptiple keys due to python spec.
 
-#↓in the case "update"
+#🔵in the case "update"
 #age_set1 = {18 : 'man'}
 #age_set.update(age_set1)
 #print(age_set)
