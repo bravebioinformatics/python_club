@@ -84,7 +84,7 @@ print(list_dict)
 
 #But I want to use for loop and the way is probably a correct way.
 #I want display the code {18: 'woman', 'man'}.
-#Therefore, I ask a question it by Qiita(https://qiita.com/forforfor1760/questions/fdce87d43ecfdfe67d97)
+#Therefore, I ask a question the issue by Qiita(https://qiita.com/forforfor1760/questions/fdce87d43ecfdfe67d97)
 #I try it to solve now.
 
 
