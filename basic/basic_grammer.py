@@ -52,15 +52,13 @@ sex = ['man','woman','woman','woman','man','woman','man','man','man','woman','ma
 # Now let's pair up those two lists and make a dictionary. Set "age" as the key. 
 # there are 2 lists.
 # iterate those lists using "for"
+
 list_dict = dict(zip(age,sex))
 for age, sex in list_dict.items():
     print(age, sex)
 
 print(list_dict)
 
-#🔵
-#d = dict(zip(age,sex))
-#print(d)でも成功
 
 # Is the person who is 24 years old man or woman? Please leave the code, not just the answer. 
 print(list_dict[24])
@@ -72,18 +70,24 @@ print(list_dict[24])
 #20220303 comment by Hara
 # That's right! Dictionaries don't allow duplication of key. 
 # Below code, which is a usual way to add a key-value pair just overwrites the existing value(woman) but that's not what we want...   
-list_dict[18] = "man"
-print(list_dict)
+
+#list_dict[18] = "man"
+#print(list_dict)
 
 # Then next thing we should think is "is it possible for one key to have multiple values?"
 # hint: It IS possible for a dictionary to have a [one key-multiple values] pair.
 # Can you think of a way to make a certain key hold multiple values though? 
 
+#This is the way of using nest structure.
+list_dict[18] = {1:'woman',2:'man'}
+print(list_dict)
 
-#🔵in the case "update"
-#age_set1 = {18 : 'man'}
-#age_set.update(age_set1)
-#print(age_set)
+#But I want to use for loop and the way is probably a correct way.
+#I want display the code {18: 'woman', 'man'}.
+#Therefore, I ask a question it by Qiita(https://qiita.com/forforfor1760/questions/fdce87d43ecfdfe67d97)
+#I try it to solve now.
+
+
 
 
 
